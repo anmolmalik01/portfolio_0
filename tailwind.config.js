@@ -10,6 +10,9 @@ module.exports = {
     textFillColor: (theme) => theme("borderColor"),
     textStrokeColor: (theme) => theme("borderColor"),
     textStrokeWidth: (theme) => theme("borderWidth"),
+    clipPath: {
+      mypolygon: "polygon(0 0, 100% 0, 25% 100%)",
+    },
     paintOrder: {
       fsm: { paintOrder: "fill stroke markers" },
       fms: { paintOrder: "fill markers stroke" },
@@ -29,9 +32,8 @@ module.exports = {
         main_dark: "#DE0304",
         light_black: "#171717",
       },
-      dropShadow: {
-        light_shadow: "33px 61px 152px 20px rgba(255,255,255,0.45)",
-        "3xl": "0 35px 35px rgba(225, 0, 0, 0.25)",
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(1, 1, 1, 1)",
       },
       height: {
         "100v": "100vh",
@@ -39,15 +41,15 @@ module.exports = {
       width: {
         "100v": "100vh",
       },
-      fontFamily: {
-        sans: ["Noto Sans", ...defaultTheme.fontFamily.sans],
-        fancy: ["Caveat"],
-        open_Sans: ["Open Sans"],
-      },
+      fontFamily: {},
+    },
+    fontFamily: {
+      abc: ["Turret Road", "cursive"],
     },
   },
   plugins: [
     require("tailwindcss-text-fill-stroke")(), // no options to configure
+    require("tailwind-clip-path"),
   ],
   variants: {
     // all the following default to ['responsive']

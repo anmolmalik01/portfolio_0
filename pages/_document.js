@@ -15,11 +15,15 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Exo&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap"
             rel="stylesheet"
           />
         </Head>

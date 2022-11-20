@@ -9,43 +9,43 @@ const Nav = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={className}>
-      <div className="text-xl font-semibold">
+      <div className="text-xl font-semibold font-abc">
         <nav>
           <div className="mx-full px-4 pt-3 sm:px-6 lg:px-8">
             <div className="flex justify-between w-full">
               <div className="flex items-center pl-3"></div>
               <div className="hidden md:block w-full">
-                <div className="flex items-baseline justify-between space-x-4 w-full">
+                <div className="flex items-baseline justify-between space-x-4 w-full font-abc">
                   <div className="px-6 py-2">
                     <a
-                      href="#"
+                      href="./about"
                       className="relative transition ease-out duration-100 w-min-content pb-1
-                  before:w-0 before:h-[3px] before:absolute before:bottom-0 before:right-0 before:bg-main before:transition-all before:duration-100
-                  hover:before:w-full hover:before:left-0 hover:before:bg-main
-                  hover:text-main"
+                  before:w-0 before:h-[3px] before:absolute before:bottom-0 before:right-0 before:bg-[#837A75] before:transition-all before:duration-100
+                  hover:before:w-full hover:before:left-0 hover:before:bg-[#837A75]
+                  hover:text-white"
                     >
-                      Projects
+                      About
                     </a>
                   </div>
 
                   <div className="px-6 py-2">
                     <a
-                      href="#"
+                      href="./projects"
                       className="relative transition ease-out duration-100 w-min-content pb-1
-                            before:w-0 before:h-[3px] before:absolute before:bottom-0 before:right-0 before:bg-main before:transition-all before:duration-100
-                            hover:before:w-full hover:before:left-0 hover:before:bg-main
-                            hover:text-main"
+                            before:w-0 before:h-[3px] before:absolute before:bottom-0 before:right-0 before:bg-[#837A75] before:transition-all before:duration-100
+                            hover:before:w-full hover:before:left-0 hover:before:bg-[#837A75]
+                            hover:text-white"
                     >
-                      Home
+                      Projects
                     </a>
                   </div>
                   <div className="px-6 py-2">
                     <a
-                      href="#"
+                      href="./contact"
                       className="relative transition ease-out duration-100 w-min-content pb-1
-                            before:w-0 before:h-[3px] before:absolute before:bottom-0 before:right-0 before:bg-main before:transition-all before:duration-100
-                            hover:before:w-full hover:before:left-0 hover:before:bg-main
-                            hover:text-main"
+                            before:w-0 before:h-[3px] before:absolute before:bottom-0 before:right-0 before:bg-[#837A75] before:transition-all before:duration-100
+                            hover:before:w-full hover:before:left-0 hover:before:bg-[#837A75]
+                            hover:text-white"
                     >
                       Contact
                     </a>
@@ -113,16 +113,9 @@ const Nav = ({ className }) => {
                 <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                   <a
                     href="#"
-                    className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    Dashboard
-                  </a>
-
-                  <a
-                    href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Team
+                    About
                   </a>
 
                   <a
@@ -136,14 +129,7 @@ const Nav = ({ className }) => {
                     href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Calendar
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    Reports
+                    Contact
                   </a>
                 </div>
               </div>

@@ -2,29 +2,31 @@ function Contact() {
   return (
     <div className="bg-gradient-to-br from-[#2e2e2e] via-black to-black text-white">
       {/* main heading */}
-      <div className="flex justify-center">
-        <p className="pt-36 text-8xl text-left font-bold leading-relaxed max-w-4xl">
+      <div className="flex ">
+        <p className="leading-normal pt-[34%] sm:pt-[18%] lg:pt-[13%] pl-[6%] pr-[3%] text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-left font-bold max-w-3xl lg:max-w-4xl">
           Let's create one that stands
         </p>
       </div>
       {/* contact me */}
       <div>
-        <div className="px-72 pt-32">
+        <div className="px-[10%] pt-[10%] md:pt-[8%]">
           {/* contact me heading */}
-          <p className="py-8 font-extrabold text-2xl sm:text-4xl">Contact Me</p>
+          <p className="pt-8 pb-3 md:pb-6 font-extrabold text-2xl lg:text-3xl">
+            Contact Me
+          </p>
 
-          <p className="text-base">
-            I am in a postion to collaborate with companies/individuals/start
+          <p className="text-base lg:text-lg">
+            I am in a postion to collaborate with companies, individuals, start
             ups to get my knowledge and skills to the buisness world. I want to
             bring the ideas to reality
           </p>
-          <p className="py-4">Feel free to contact me</p>
+          <p className="text-lg pt-10 pb-5">Feel free to contact me</p>
         </div>
         {/* contact me box */}
         <div className="flex flex-rows justify-center">
           <div
-            className="text-black bg-[#2c2c2c] p-5 rounded-sm m-3 sm:p-10 sm:rounded-none
-                        transition-all border border-[#2c2c2c] hover:border hover:border-black"
+            className="text-black p-5 rounded-sm m-3 sm:p-10 sm:rounded-none
+                        transition-all border border-[#504f4f]"
           >
             <form
               action="https://formsubmit.co/malik16603@gmail.com"
@@ -67,7 +69,7 @@ function Contact() {
                   </span>
                   <input
                     type="text"
-                    name="email"
+                    name="subject"
                     class="mt-2 px-2 py-1 sm:px-3 sm:py-2 sm:mt-1 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-white focus:ring-white block w-full rounded-md sm:text-sm focus:ring-1"
                     placeholder=""
                   />
@@ -76,11 +78,11 @@ function Contact() {
               <div className="p-3 sm:p-5">
                 <label>
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
-                    Mesage
+                    Message
                   </span>
                   <textarea
                     type="text"
-                    name=""
+                    name="message"
                     class="mt-2 px-2 py-1 sm:px-3 sm:py-2 sm:mt-1 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-white focus:ring-white block w-full h-40 rounded-md sm:text-sm focus:ring-1"
                     placeholder=""
                     required
